@@ -1,0 +1,293 @@
+/* =============================================================================
+   MultiOmicsSurvey Dashboard - Custom Styles
+   ============================================================================= */
+
+/* -----------------------------------------------------------------------------
+   General Layout
+   ----------------------------------------------------------------------------- */
+
+.content-wrapper {
+  background-color: #f4f6f9;
+}
+
+/* -----------------------------------------------------------------------------
+   Card Styling for Plot Displays
+   ----------------------------------------------------------------------------- */
+
+.plot-card {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-bottom: 15px;
+}
+
+.plot-card:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* -----------------------------------------------------------------------------
+   Control Panel Styling
+   ----------------------------------------------------------------------------- */
+
+.control-panel {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-bottom: 15px;
+}
+
+.plot-controls {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+/* -----------------------------------------------------------------------------
+   Navigation Buttons for Swipeable Cards
+   ----------------------------------------------------------------------------- */
+
+.card-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 15px;
+  padding: 10px;
+  background: #f8f9fa;
+  border-radius: 5px;
+}
+
+.card-nav .btn {
+  min-width: 40px;
+}
+
+/* -----------------------------------------------------------------------------
+   Color Picker Panel
+   ----------------------------------------------------------------------------- */
+
+.color-panel {
+  background: #f8f9fa;
+  padding: 15px;
+  border-radius: 8px;
+  margin-top: 10px;
+  max-height: 400px;
+  overflow-y: auto;
+}
+
+.color-section {
+  margin-bottom: 15px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #dee2e6;
+}
+
+.color-section:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+}
+
+.color-section h6 {
+  color: #495057;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+/* Smaller color pickers */
+.color-panel .form-group {
+  margin-bottom: 8px;
+}
+
+.color-panel .control-label {
+  font-size: 12px;
+  margin-bottom: 2px;
+}
+
+/* -----------------------------------------------------------------------------
+   Responsive Image Container
+   ----------------------------------------------------------------------------- */
+
+.img-container {
+  max-width: 100%;
+  overflow: auto;
+  text-align: center;
+}
+
+.img-container img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+
+/* -----------------------------------------------------------------------------
+   Plot Information Panel
+   ----------------------------------------------------------------------------- */
+
+.plot-info-panel {
+  background: #e9ecef;
+  padding: 15px;
+  border-radius: 8px;
+  margin: 15px 0;
+}
+
+.plot-info-panel h5 {
+  margin-top: 0;
+  color: #495057;
+}
+
+.plot-info-panel pre {
+  background: white;
+  padding: 10px;
+  border-radius: 4px;
+  font-size: 12px;
+  margin: 0;
+}
+
+/* -----------------------------------------------------------------------------
+   Help Text
+   ----------------------------------------------------------------------------- */
+
+.help-text {
+  font-size: 12px;
+  color: #6c757d;
+  font-style: italic;
+}
+
+/* -----------------------------------------------------------------------------
+   Checkbox Groups
+   ----------------------------------------------------------------------------- */
+
+.checkbox-group-container {
+  max-height: 300px;
+  overflow-y: auto;
+  padding: 10px;
+  background: #f8f9fa;
+  border-radius: 4px;
+}
+
+/* Make checkbox labels smaller */
+.shiny-input-container .checkbox label,
+.shiny-input-container .checkbox-inline label {
+  font-size: 13px;
+}
+
+/* -----------------------------------------------------------------------------
+   Button Styling
+   ----------------------------------------------------------------------------- */
+
+.btn-block {
+  margin-top: 10px;
+}
+
+.btn-info {
+  background-color: #17a2b8;
+  border-color: #17a2b8;
+}
+
+.btn-info:hover {
+  background-color: #138496;
+  border-color: #117a8b;
+}
+
+/* -----------------------------------------------------------------------------
+   Tab Styling
+   ----------------------------------------------------------------------------- */
+
+.nav-tabs {
+  margin-bottom: 20px;
+}
+
+.nav-tabs > li > a {
+  font-weight: 500;
+}
+
+/* -----------------------------------------------------------------------------
+   Loading Spinners
+   ----------------------------------------------------------------------------- */
+
+.shiny-spinner-output-container {
+  min-height: 200px;
+}
+
+/* -----------------------------------------------------------------------------
+   Sidebar Customization
+   ----------------------------------------------------------------------------- */
+
+.main-sidebar {
+  background-color: #222d32;
+}
+
+.sidebar-menu > li > a {
+  font-size: 14px;
+}
+
+.sidebar-menu > li.active > a {
+  border-left-color: #3c8dbc;
+}
+
+/* -----------------------------------------------------------------------------
+   Header Customization
+   ----------------------------------------------------------------------------- */
+
+.main-header .logo {
+  font-weight: 600;
+  font-size: 18px;
+}
+
+/* -----------------------------------------------------------------------------
+   Plotly Charts
+   ----------------------------------------------------------------------------- */
+
+.plotly {
+  margin: 0 auto;
+}
+
+/* -----------------------------------------------------------------------------
+   Responsive Adjustments
+   ----------------------------------------------------------------------------- */
+
+@media (max-width: 768px) {
+  .control-panel,
+  .plot-controls {
+    margin-bottom: 20px;
+  }
+  
+  .color-panel {
+    max-height: 250px;
+  }
+}
+
+/* -----------------------------------------------------------------------------
+   Scrollbar Styling
+   ----------------------------------------------------------------------------- */
+
+.color-panel::-webkit-scrollbar {
+  width: 6px;
+}
+
+.color-panel::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 3px;
+}
+
+.color-panel::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 3px;
+}
+
+.color-panel::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* -----------------------------------------------------------------------------
+   Download Button
+   ----------------------------------------------------------------------------- */
+
+.download-btn-container {
+  margin-top: 15px;
+}
+
+#plots-download_plot {
+  width: 100%;
+}
