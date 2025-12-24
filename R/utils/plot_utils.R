@@ -30,14 +30,15 @@ create_bar_chart <- function(data, chart_type = "Stacked",
       
       # Determine color for this group
       grp_color <- if (!is.null(group_colors) && grp %in% names(group_colors)) {
-        group_colors[grp]
+        group_colors[[grp]]
       } else {
         NULL
       }
       
+      # Use explicit values instead of formula to avoid scoping issues
       p <- add_trace(p, 
-                     x = ~grp_data$Cluster,
-                     y = ~grp_data$Count,
+                     x = grp_data$Cluster,
+                     y = grp_data$Count,
                      type = "bar",
                      name = grp,
                      marker = list(color = grp_color),
@@ -61,7 +62,7 @@ create_bar_chart <- function(data, chart_type = "Stacked",
     # Use cluster colors if provided
     colors <- if (!is.null(cluster_colors)) {
       sapply(data$Cluster, function(c) {
-        if (c %in% names(cluster_colors)) cluster_colors[c] else "#999999"
+        if (c %in% names(cluster_colors)) cluster_colors[[c]] else "#999999"
       })
     } else {
       NULL

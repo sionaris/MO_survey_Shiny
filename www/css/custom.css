@@ -46,6 +46,29 @@
 }
 
 /* -----------------------------------------------------------------------------
+   Plot Viewer - Laptop Screen Optimized
+   ----------------------------------------------------------------------------- */
+
+.plot-viewer {
+  max-height: 70vh;  /* 70% of viewport height - fits on laptop screens */
+  overflow: auto;
+  text-align: center;
+  background: #fafafa;
+  border-radius: 4px;
+  padding: 10px;
+}
+
+.plot-image {
+  max-width: 100%;
+  max-height: 65vh;  /* Slightly smaller than container for padding */
+  height: auto;
+  width: auto;
+  object-fit: contain;
+  display: block;
+  margin: 0 auto;
+}
+
+/* -----------------------------------------------------------------------------
    Navigation Buttons for Swipeable Cards
    ----------------------------------------------------------------------------- */
 
@@ -105,11 +128,12 @@
 }
 
 /* -----------------------------------------------------------------------------
-   Responsive Image Container
+   Responsive Image Container (legacy support)
    ----------------------------------------------------------------------------- */
 
 .img-container {
   max-width: 100%;
+  max-height: 70vh;
   overflow: auto;
   text-align: center;
 }

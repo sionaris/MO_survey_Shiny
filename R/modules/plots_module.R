@@ -142,10 +142,14 @@ plotsServer <- function(id, plot_index, plots_dir) {
       img_data <- base64enc::base64encode(plot_path)
       img_src <- paste0("data:image/png;base64,", img_data)
       
-      tags$img(
-        src = img_src,
-        style = "max-width: 100%; height: auto; display: block; margin: 0 auto;",
-        alt = input$plot_select
+      # Container with scrollable area and max height for laptop screens
+      div(
+        class = "plot-viewer",
+        tags$img(
+          src = img_src,
+          class = "plot-image",
+          alt = input$plot_select
+        )
       )
     })
     
