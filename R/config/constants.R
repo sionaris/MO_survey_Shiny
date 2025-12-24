@@ -4,8 +4,9 @@
 
 #' Method display names to CSV column names mapping
 #' Keys are display names (used in UI), values are column names in master_dataset.csv
+#' Note: CSV columns have hyphens (ab-SNF) not dots, when loaded with check.names=FALSE
 METHOD_MAPPING <- c(
-  "ab-SNF" = "ab.SNF",
+  "ab-SNF" = "ab-SNF",
   "ANF" = "ANF",
   "CIMLR" = "CIMLR",
   "COCA" = "COCA",
@@ -18,8 +19,8 @@ METHOD_MAPPING <- c(
   "MONET" = "MONET",
   "MSNE" = "MSNE",
   "NEMO" = "NEMO",
-  "RWR-F" = "RWR.F",
-  "RWR-NF" = "RWR.NF",
+  "RWR-F" = "RWR-F",
+  "RWR-NF" = "RWR-NF",
   "SNF" = "SNF",
   "Spectrum" = "Spectrum",
   "wMKL" = "wMKL",
@@ -30,34 +31,34 @@ METHOD_MAPPING <- c(
 )
 
 #' Clinical variable column names to hex_col.rds keys mapping
-#' Keys are column names in master_dataset.csv, values are keys in hex_col.rds
+#' Keys are column names in master_dataset.csv (with spaces), values are keys in hex_col.rds
+#' Note: Both use spaces (e.g., "ER status") when loaded with check.names=FALSE
 CLINICAL_MAPPING <- c(
-  "ER.status" = "ER status",
-  "HER2.status" = "HER2 status",
+  "ER status" = "ER status",
+  "HER2 status" = "HER2 status",
   "Stage" = "Stage",
-  "PR.status" = "PR status",
-  "Vital.status" = "Vital status",
+  "PR status" = "PR status",
+  "Vital status" = "Vital status",
   "Ethnicity" = "Ethnicity",
   "Race" = "Race",
-  "Lymph.node.status" = "Lymph node status",
+  "Lymph node status" = "Lymph node status",
   "Histology" = "Histology",
-  "Menopausal.status" = "Menopausal status",
+  "Menopausal status" = "Menopausal status",
   "Metastasis" = "Metastasis"
 )
 
 #' Display names for clinical variables (for UI labels)
 CLINICAL_DISPLAY_NAMES <- c(
-  "ER.status" = "ER Status",
-  "HER2.status" = "HER2 Status",
+  "ER status" = "ER Status",
+  "HER2 status" = "HER2 Status",
   "Stage" = "Stage",
-  "PR.status" = "PR Status",
-  "Vital.status" = "Vital Status",
-
+  "PR status" = "PR Status",
+  "Vital status" = "Vital Status",
   "Ethnicity" = "Ethnicity",
   "Race" = "Race",
-  "Lymph.node.status" = "Lymph Node Status",
+  "Lymph node status" = "Lymph Node Status",
   "Histology" = "Histology",
-  "Menopausal.status" = "Menopausal Status",
+  "Menopausal status" = "Menopausal Status",
   "Metastasis" = "Metastasis"
 )
 
@@ -123,14 +124,14 @@ PLOT_FOLDER_MAPPING <- c(
 
 #' Clinical variables available for grouping/sunburst
 CLINICAL_VARIABLES <- c(
-  "ER.status", "HER2.status", "Stage", "PR.status",
-  "Vital.status", "Ethnicity", "Race",
-  "Lymph.node.status", "Histology",
-  "Menopausal.status", "Metastasis"
+  "ER status", "HER2 status", "Stage", "PR status",
+  "Vital status", "Ethnicity", "Race",
+  "Lymph node status", "Histology",
+  "Menopausal status", "Metastasis"
 )
 
 #' Default sunburst hierarchy
-DEFAULT_SUNBURST_LEVELS <- c("ER.status", "HER2.status", "Stage")
+DEFAULT_SUNBURST_LEVELS <- c("ER status", "HER2 status", "Stage")
 
 #' Maximum number of sunburst hierarchy levels
 MAX_SUNBURST_LEVELS <- 4

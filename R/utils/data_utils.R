@@ -10,12 +10,13 @@
 #' master_data <- load_master_data("data/master_dataset.csv")
 load_master_data <- function(path) {
   tryCatch({
+    # Load with check.names=FALSE to preserve original column names (spaces and hyphens)
     data <- read.csv(path, stringsAsFactors = FALSE, check.names = FALSE)
     
-    # Validate required columns exist
-    required_clinical <- c("Sample.ID", "Vital.status", "Ethnicity", "Race", 
-                           "Lymph.node.status", "Histology", "Menopausal.status",
-                           "PR.status", "ER.status", "HER2.status", "Metastasis", "Stage")
+    # Validate required columns exist (using actual column names with spaces)
+    required_clinical <- c("Sample.ID", "Vital status", "Ethnicity", "Race", 
+                           "Lymph node status", "Histology", "Menopausal status",
+                           "PR status", "ER status", "HER2 status", "Metastasis", "Stage")
     
     missing_cols <- setdiff(required_clinical, names(data))
     if (length(missing_cols) > 0) {

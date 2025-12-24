@@ -59,7 +59,7 @@ explorationUI <- function(id) {
                 inputId = ns("bar_group_var"),
                 label = "Grouping Variable",
                 choices = setNames(CLINICAL_VARIABLES, CLINICAL_DISPLAY_NAMES[CLINICAL_VARIABLES]),
-                selected = "ER.status"
+                selected = "ER status"
               ),
               
               # Chart type
