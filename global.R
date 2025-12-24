@@ -15,6 +15,7 @@ library(base64enc)
 
 # Source configuration and utilities
 source("R/config/constants.R")
+source("R/config/plot_names.R")
 source("R/utils/data_utils.R")
 source("R/utils/plot_utils.R")
 source("R/utils/color_utils.R")

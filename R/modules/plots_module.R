@@ -113,13 +113,17 @@ plotsServer <- function(id, plot_index, plots_dir) {
     observeEvent(input$method_select, {
       req(input$method_select)
       
-      plots <- get_method_plots(plot_index, input$method_select)
+      # Get raw plot filenames
+      raw_plots <- get_method_plots(plot_index, input$method_select)
+      
+      # Filter and rename for display
+      plot_choices <- filter_and_rename_plots(raw_plots)
       
       updateSelectInput(
         session,
         "plot_select",
-        choices = plots,
-        selected = if (length(plots) > 0) plots[1] else NULL
+        choices = plot_choices,
+        selected = if (length(plot_choices) > 0) plot_choices[1] else NULL
       )
     })
     
@@ -157,9 +161,13 @@ plotsServer <- function(id, plot_index, plots_dir) {
     output$plot_info <- renderText({
       req(input$method_select, input$plot_select)
       
+      # Get display name for the plot
+      display_name <- get_plot_display_name(input$plot_select)
+      
       info <- paste0(
         "Category: ", plot_index[[input$method_select]]$category, "\n",
         "Method: ", input$method_select, "\n",
+        "Plot: ", display_name, "\n",
         "File: ", input$plot_select
       )
       

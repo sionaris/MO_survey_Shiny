@@ -1,0 +1,134 @@
+ab-SNF_matrix_Frobenius_similarity_histogram-1.png
+ab-SNF_matrix_Pearson_similarity_histogram-1.png
+ab-SNF_top_1000_feature_ranks.png
+adjacency_CNV_heatmap.png
+adjacency_Methylation_heatmap.png
+adjacency_miRNA_heatmap.png
+adjacency_RNAseq_heatmap.png
+adjacency_SNPs_heatmap.png
+aff_CNV_heatmap.png
+aff_final_affinity_heatmap.png
+aff_Methylation_heatmap.png
+aff_miRNA_heatmap.png
+aff_RNAseq_heatmap.png
+aff_SNPs_heatmap.png
+All sets in CS1 overlap heatmap.png
+ANF_top_1000_feature_ranks.png
+ARI_vs_consensus_bars.png
+ARS_heatmap.png
+avg_adjacency_heatmap.png
+biology_and_clust_comparisons_across_algorithms-1.png
+CIMLR_final_S_matrix_heatmap.png
+CIMLR_S_matrix_Frobenius_similarity_histogram-1.png
+CIMLR_S_matrix_Pearson_similarity_histogram-1.png
+Cluster_scatter-1.png
+Cluster_scatter_2D-1.png
+CNV Original Affinity 10-NN Graph.png
+CNV Original Affinity 18-NN Graph.png
+CNV Original Affinity 25-NN Graph.png
+CNV Original Affinity 30-NN Graph.png
+CNV Original Affinity 50-NN Graph.png
+CNV_no_offset_weights_histogram.png
+CNV_with_offset_weights_histogram.png
+colored_Final_Fused_Affinity_10-NN_Graph.png
+colored_Final_Fused_Affinity_18-NN_Graph.png
+colored_Final_Fused_Affinity_25-NN_Graph.png
+colored_Final_Fused_Affinity_30-NN_Graph.png
+colored_Final_Fused_Affinity_50-NN_Graph.png
+comp_ER_clust_alg.png
+Consensus_matrix_heatmap.png
+counts_by_alg.png
+Down-regulated sets in CS1 overlap heatmap.png
+explained_variation_plot.png
+Final Fused Affinity (S matrix).png
+Final Fused Affinity 10-NN Graph.png
+Final Fused Affinity 10-NN, sigma = 0.7 Graph.png
+Final Fused Affinity 18-NN Graph.png
+Final Fused Affinity 25-NN Graph.png
+Final Fused Affinity 30-NN Graph.png
+Final Fused Affinity 50-NN Graph.png
+Final Fused wMKL matrix.png
+Full Consensus Graph.png
+hclust_aff_final_affinity_heatmap.png
+hclust_ARS_heatmap.png
+hclust_avg_adjacency_heatmap.png
+iClusterBayes_meanZ_heatmap.png
+KLIC Final Fused Affinity.png
+Methylation Original Affinity 10-NN Graph.png
+Methylation Original Affinity 18-NN Graph.png
+Methylation Original Affinity 25-NN Graph.png
+Methylation Original Affinity 30-NN Graph.png
+Methylation Original Affinity 50-NN Graph.png
+Methylation_no_offset_weights_histogram.png
+Methylation_with_offset_weights_histogram.png
+MFA_contrib_barplots_11_dims.png
+MFA_contrib_featplots_11_dims_top100.png
+MFA_contrib_featplots_11_dims_top10000.png
+MFA_ER_plots_11_dims.png
+MFA_HER2_plots_11_dims.png
+MFA_Stage_plots_11_dims.png
+MFA_varplots_11_dims.png
+miRNA Original Affinity 10-NN Graph.png
+miRNA Original Affinity 18-NN Graph.png
+miRNA Original Affinity 25-NN Graph.png
+miRNA Original Affinity 30-NN Graph.png
+miRNA Original Affinity 50-NN Graph.png
+miRNA_no_offset_weights_histogram.png
+miRNA_with_offset_weights_histogram.png
+MONET Average Adjacency graph.png
+MONET CNV Adjacency graph.png
+MONET Methylation Adjacency graph.png
+MONET miRNA Adjacency graph.png
+MONET RNAseq Adjacency graph.png
+MONET SNPs Adjacency graph.png
+MONET_module_composition_by_ER_and_HER2_status.png
+MOVICS_consensus_heatmap-1.png
+MOVICS_TCGA_RNAseq-CNV-Methylation-miRNA-SNPs_eval_on_transNEO_ARI_clusterings_heatmap.png
+MOVICS_TCGA_RNAseq-CNV-Methylation-miRNA-SNPs_eval_on_transNEO_Jaccard_clusterings_heatmap.png
+MOVICS_TCGA_RNAseq-CNV-Methylation-miRNA-SNPs_eval_on_transNEO_NMI_clusterings_heatmap.png
+MSNE embeddings graph.png
+MSNE_50-dim embeddings_PCA.png
+MSNE_embeddings_distance_heatmap.png
+Multi-Consensus Graph.png
+NEMO_matrix_Frobenius_similarity_histogram-1.png
+NEMO_matrix_Pearson_similarity_histogram-1.png
+NEMO_top_1000_feature_ranks.png
+optimal_k_plot_TCGA_RNAseq-CNV-Methylation-miRNA-SNPs-1.png
+RNAseq Original Affinity 10-NN Graph.png
+RNAseq Original Affinity 18-NN Graph.png
+RNAseq Original Affinity 25-NN Graph.png
+RNAseq Original Affinity 30-NN Graph.png
+RNAseq Original Affinity 50-NN Graph.png
+RNAseq_no_offset_weights_histogram.png
+RNAseq_with_offset_weights_histogram.png
+RWR-F_matrix_Frobenius_similarity_histogram-1.png
+RWR-F_matrix_Pearson_similarity_histogram-1.png
+RWR-F_top_1000_feature_ranks.png
+RWR-NF_matrix_Frobenius_similarity_histogram-1.png
+RWR-NF_matrix_Pearson_similarity_histogram-1.png
+RWR-NF_top_1000_feature_ranks.png
+screeplot_MCA_ann_df_ncp20.png
+screeplot_MCA_ann_df_ncp200.png
+SNF_matrix_Frobenius_similarity_histogram-1.png
+SNF_matrix_Pearson_similarity_histogram-1.png
+SNF_top_1000_feature_ranks.png
+SNPs Original Affinity 10-NN Graph.png
+SNPs Original Affinity 18-NN Graph.png
+SNPs Original Affinity 25-NN Graph.png
+SNPs Original Affinity 30-NN Graph.png
+SNPs Original Affinity 50-NN Graph.png
+SNPs_no_offset_weights_histogram.png
+SNPs_with_offset_weights_histogram.png
+Spectrum_final_S_matrix_heatmap.png
+Spectrum_matrix_Frobenius_similarity_histogram-1.png
+Spectrum_matrix_Pearson_similarity_histogram-1.png
+Up-regulated sets in CS1 overlap heatmap.png
+Violin_plot_of_IC50 for 5-Fluorouracil-1.png
+Violin_plot_of_IC50 for Cisplatin-1.png
+Violin_plot_of_IC50 for Doxorubicin-1.png
+Violin_plot_of_IC50 for Lapatinib-1.png
+Violin_plot_of_IC50 for Paclitaxel-1.png
+Violin_plot_of_IC50 for Sorafenib-1.png
+webgestalt_ER1_weighted_cover_set.png
+wMKL_final_S_matrix_heatmap.png
+wMKL_t-SNE_2D_projection.png
