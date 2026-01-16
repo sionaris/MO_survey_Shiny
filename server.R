@@ -23,6 +23,14 @@ server <- function(input, output, session) {
     cluster_colors = cluster_colors
   )
   
+  # Benchmarks module - for algorithm performance benchmarks
+  benchmarksServer(
+    id = "benchmarks",
+    benchmark_data = benchmark_data,
+    category_colors = category_colors,
+    method_categories = method_categories
+  )
+  
   # =========================================================================
   # Session cleanup
   # =========================================================================

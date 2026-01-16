@@ -37,6 +37,12 @@ ui <- dashboardPage(
         icon = icon("chart-pie")
       ),
       
+      menuItem(
+        text = "Benchmarks",
+        tabName = "benchmarks_tab",
+        icon = icon("tachometer-alt")
+      ),
+      
       # Information section at bottom
       hr(),
       div(
@@ -79,6 +85,17 @@ ui <- dashboardPage(
         p("Create custom visualizations from the master dataset."),
         hr(),
         explorationUI("exploration")
+      ),
+      
+      # =====================================================================
+      # Benchmarks Tab
+      # =====================================================================
+      tabItem(
+        tabName = "benchmarks_tab",
+        h2("Algorithm Benchmarks"),
+        p("Explore algorithm performance under feature/sample perturbations and clustering stability."),
+        hr(),
+        benchmarksUI("benchmarks")
       )
     )
   )

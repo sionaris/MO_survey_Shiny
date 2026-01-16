@@ -23,6 +23,7 @@ source("R/utils/color_utils.R")
 # Source modules
 source("R/modules/plots_module.R")
 source("R/modules/exploration_module.R")
+source("R/modules/benchmarks_module.R")
 
 # =============================================================================
 # Load Data
@@ -45,3 +46,16 @@ message(paste("Found plots for", length(plot_index), "methods"))
 
 # Define plots directory path
 plots_dir <- "data/plots"
+
+# =============================================================================
+# Load Benchmark Data
+# =============================================================================
+
+message("Loading benchmark data...")
+benchmark_data <- list(
+  feature = readRDS("data/benchmark_data/feature_perturbation_data.rds"),
+  sample = readRDS("data/benchmark_data/sample_perturbation_data.rds")
+)
+category_colors <- readRDS("data/benchmark_data/category_colors.rds")
+method_categories <- readRDS("data/benchmark_data/method_categories.rds")
+message("Benchmark data loaded successfully")
