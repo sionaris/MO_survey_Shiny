@@ -1,6 +1,6 @@
 # MultiOmicsSurvey Dashboard
 
-Interactive R Shiny dashboard for exploring multi-omics breast cancer clustering results from the MultiOmicsSurvey project.
+Interactive R Shiny dashboard for exploring multi-omics breast cancer clustering results from the MultiOmicsSurvey project. The app can also be accessed in [shinyapps.io](https://v9cawl-aristeidis0sionakidis.shinyapps.io/mo_survey_shiny/).
 
 ## Features
 
